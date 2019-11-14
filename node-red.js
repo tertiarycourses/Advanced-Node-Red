@@ -93,23 +93,39 @@ https://api.data.gov.sg/v1/environment/air-temperature?date=2018-11-10
 
 https://flows.nodered.org/flow/6e4649bc6d6529078cbb731610242eac
 
+// Template
+<table style="width:100%">
+  <tr>
+    <th>Index</th> 
+    <th>Timestamp</th>
+    <th>Value</th> 
+    <th>Bool</th>
+  </tr>
+  <tr ng-repeat="x in msg.payload | limitTo:20">
+    <td>{{$index}}</td>
+    <td>{{msg.payload[$index].TIMESTAMP}}</td>
+    <td>{{msg.payload[$index].VALUE}}</td> 
+    <td>{{msg.payload[$index].BOOL}}</td>
+  </tr>
+</table>
+
 //Topic 6 
 
 //Connect DB
-'connect('school.db')'
+connect('school.db')
 
 //
-'create table student (name text,rank int)'
+create table student (name text,rank int)
 
 //Insert data
 
-'insert into student (name,rank) values (?,?)',('Belinda',2)
-'insert into student (name,rank) values (?,?)',('Jane',3)
-'insert into student (name,rank) values (?,?)',('Steve',4)
-'insert into student (name,rank) values (?,?)',('Alfred',5)
+insert into student (name,rank) values (?,?),('Belinda',2)
+insert into student (name,rank) values (?,?),('Jane',3)
+insert into student (name,rank) values (?,?),('Steve',4)
+insert into student (name,rank) values (?,?),('Alfred',5)
 
 // Read data
-'select * from student order by name'
+select * from student order by name
 
 //Update data 
 'update student set rank=? where name=?',(5,'Steve')
