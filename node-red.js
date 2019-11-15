@@ -26,6 +26,16 @@ if (topic=="test2"){
     
 }
 
+// Ex: Object Message
+//msg2 = msg.topic.toUpperCase(); //error
+
+// msg1 = msg;
+// msg2 = {topic:msg.topic.toUpperCase()};
+// return [msg1,msg2];
+
+msg2 = {topic:msg.topic.toUpperCase()};
+return [msg,msg2];
+
 //ExL Multiple Ouputs
 msg1 = {payload: Math.round(Math.random()*100)};
 msg2 = {payload: Math.round(Math.random()*100)};
