@@ -109,15 +109,48 @@ https://flows.nodered.org/flow/6e4649bc6d6529078cbb731610242eac
   </tr>
 </table>
 
-//Topic 6 
+// Exercise 
 
-//Connect DB
-connect('school.db')
+msg.payload = Math.round(Math.random()*100);
+return msg;
 
-//
+// Topic 5 Dashboard 
+
+// Line chart
+
+[{
+"series": ["A", "B", "C"],
+"data": [
+    [{ "x": 1504029632890, "y": 5 },
+     { "x": 1504029636001, "y": 4 },
+     { "x": 1504029638656, "y": 2 }
+    ],
+    [{ "x": 1504029633514, "y": 6 },
+     { "x": 1504029636622, "y": 7 },
+     { "x": 1504029639539, "y": 6 }
+    ],
+    [{ "x": 1504029634400, "y": 7 },
+     { "x": 1504029637959, "y": 7 },
+     { "x": 1504029640317, "y": 7 }
+    ]
+],
+"labels": [""]
+}]
+
+// Bar chart and Pie chart
+[{
+    "series": [ "X", "Y", "Z"],
+    "data": [ [5], [3], [6] ],
+    "labels": [ "Jan" ]
+}]
+
+// Topic 6 Sqlite Node
+
+
+// Create table 
 create table student (name text,rank int)
 
-//Insert data
+//Insert data 
 
 insert into student (name,rank) values (?,?),('Belinda',2)
 insert into student (name,rank) values (?,?),('Jane',3)
