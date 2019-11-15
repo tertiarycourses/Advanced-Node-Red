@@ -7,6 +7,8 @@ The course outline can be found in
 
 https://www.tertiarycourses.com.sg/advanced-node-red-training.html
 
+https://www.tertiarycourses.com.my/advanced-node-red-training-malaysia.html
+
 <p><strong>Topic 1 Overview of Node-Red</strong></p>
 <ul>
 <li>Overview of Node-Red</li>
