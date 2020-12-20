@@ -1,5 +1,5 @@
 # Advanced Node-RED Training
-## by [Tertiary Infotech Pte. Ltd](https://www.tertiarycourses.com.sg/)
+## by [Tertiary Courses](https://www.tertiarycourses.com.sg/)
 
 These are the exercise files used for [Advanced Node-RED Training](https://www.tertiarycourses.com.sg/advanced-node-red-training.html) course. 
 
